@@ -1,0 +1,42 @@
+<!doctype html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>KNIPNEAR</title>
+    <meta name="description" content="Kapperswebsite voor het vinden van de dichtsbijzijnde kapper.">
+    <meta name="author" content="Diego Rolf">
+    <link rel="stylesheet" href="/static/css/kapper.css">
+</head>
+
+<body>
+
+    <div class="header" id="header">
+        <a href="#home">
+            <p class="title">KNIPNEAR</p>
+        </a>
+        <p>{{t_message}}</p>
+    </div>
+
+    <div class="search">
+        <form action="/kapper/search" method="get" onsubmit="return checkForm(this);">
+            <input type="text" id="Search" name="Search" placeholder="Zoek op locatie...">
+            <button type="submit">search</button>
+        </form>
+    </div>
+
+    <div class="middle">
+        {{results | safe}}
+    </div>
+
+    <div class="footer">
+
+    </div>
+
+
+
+    <script src="/static/script/kapper.js"></script>
+</body>
+
+</html>

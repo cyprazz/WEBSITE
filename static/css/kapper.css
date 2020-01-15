@@ -1,0 +1,113 @@
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    background-color: #E0D1C2;
+    margin: 0%;
+    height: 100%;
+}
+
+.header {
+    display: block;
+    width: 100%;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.hidden {
+    visibility: hidden;
+}
+
+.title {
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    color: #000000;
+    font-family: "Segoe UI";
+    font-size: 8vw;
+    margin-top: 8%;
+    line-height: 0.8;
+}
+
+.search {
+    display: block;
+    margin: auto;
+    width: 300px;
+}
+
+.search input {
+    display: block;
+    margin: auto;
+}
+
+.search button {
+    display: block;
+    margin: auto;
+}
+
+.resultaat {
+    background-color: #FFF;
+    position: relative;
+    border-radius: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    overflow: hidden;
+    height: 400px;
+    width: 1000px;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.roundUp {
+    height: 400px;
+    position: absolute;
+    left: -50px;
+    top: -100px;
+    z-index: 0;
+}
+
+.roundDown {
+    height: 300px;
+    width: 300px;
+    position: absolute;
+    right: -50px;
+    bottom: -50px;
+    z-index: 0;
+}
+
+.resultaat h1 {
+    padding-left: 20px;
+    margin: 0;
+    z-index: 1;
+    position: relative;
+}
+
+.stars {
+    font-size: 3em;
+    margin: 0;
+    padding-left: 20px;
+    z-index: 1;
+    position: relative;
+}
+
+.locatie {
+    font-size: 1em;
+    padding-left: 20px;
+    z-index: 1;
+    position: relative;
+}
+
+.resultaat a {
+    z-index: 1;
+    font-size: 2em;
+    position: absolute;
+    right: 70px;
+    bottom: 100px;
+}
